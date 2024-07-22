@@ -9,7 +9,7 @@ const MainMenu = (props) => {
 		<Nav {...props}>
 			{menuItems.map((item) => (
 				<Nav.Link key={item.title} href={item.link} as={Link}>
-					<i className={item.icon}></i> {item.title}
+					<i className={item.icon}></i>  {item.title}
 				</Nav.Link>
 			))}
 		</Nav>
