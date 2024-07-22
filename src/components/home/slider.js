@@ -1,18 +1,16 @@
-"use client";
+"use client"
 import React from "react";
 import "./slider.scss";
-
-import Carousel from "react-bootstrap/Carousel";
-import Image from "next/image";
-
+import { Carousel } from "react-bootstrap";
 import slides from "@/helpers/data/slider.json";
+import Image from "next/image";
 
 const Slider = () => {
   return (
-    <Carousel>
+    <Carousel fade>
       {slides.map((item) => (
         <Carousel.Item key={item.id}>
-          <Image src={`/img/slider/${item.Image}`} width={1800} height={800} alt={item.title}/>
+          <Image src={`/img/slider/${item.image}`} width={1800} height={800} alt={item.title}/>
           <Carousel.Caption>
             <h3>{item.title}</h3>
             <p>{item.desc}</p>
