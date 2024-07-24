@@ -13,7 +13,7 @@ const Footer = () => {
 			<Container>
 				<Row className="g-4">
 					<Col xl={12}>
-						<Logo theme="light"/>
+						<Logo theme="light" />
 						<p className="mt-3">{config.project.description}</p>
 					</Col>
 					<Col xs={6} lg>
